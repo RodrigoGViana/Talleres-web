@@ -75,9 +75,9 @@ round(Re, 2) # arroja un número con dos cifras decimales.
 
 Una vez calculado el número de Reynolds es necesario tomar una decisión, o mejor dicho, es necesario que el programa tome una decisión y nos avise con qué tipo de flujo estamos trabajando. Vale recordar que:
 
-_ Si el número de Reynolds es menor a 2000, el flujo es laminar.
-_ Si el número de Reynolds es mayor a 4000, el flujo es turbulento.
-_ Para valores comprendidos entre 2000 y 4000 no es posible predecir el comportamiento.
+- Si el número de Reynolds es menor a 2000, el flujo es laminar.
+- Si el número de Reynolds es mayor a 4000, el flujo es turbulento.
+- Para valores comprendidos entre 2000 y 4000 no es posible predecir el comportamiento.
 
 Ahora queda recordar que en Python contamos con `if, elif, else` para llevar a cabo este trabajo.
 
