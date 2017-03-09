@@ -18,7 +18,13 @@ Lo que debemos hacer en este caso es:
 4. Dependiendo del valor, el programa debe generar un mensaje acorde al tipo de flujo de que se trate. 
 
 ### Funciones	
+La ecuación para calcular el número de Reynolds es:
 
+$$
+\begin{aligned}
+Re = \mu
+\end{aligned}
+$$
 Python cuenta con funciones predefinidas que con frecuencia son de gran utilidad pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás comunes son: +, -, * y /.
 
 ```python
