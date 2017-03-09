@@ -1,5 +1,8 @@
 theme: jekyll-theme-cayman
 title: Comisión de talleres 2017
-markdown: kramdown
 gems:
     -jekyll-sitemap
+
+markdown: kramdown
+production_url: https://rodrigogviana.github.io/Talleres-web
+BASE_PATH : https://rodrigogviana.github.io/Talleres-web
