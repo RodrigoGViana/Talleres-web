@@ -1,8 +1,31 @@
+permalink: /:categories/:year/:month/:day/:title
+
+exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
+highlighter: rouge
+
 theme: jekyll-theme-cayman
 title: Comisión de talleres 2017
-gems:
-    -jekyll-sitemap
+
+production_url: https://rodrigogviana.github.io/Talleres-web
 
 markdown: kramdown
-production_url: https://rodrigogviana.github.io/Talleres-web
+
+JB :
+version : 0.3.0
+
 BASE_PATH : https://rodrigogviana.github.io/Talleres-web
+
+archive_path: nil
+  categories_path : nil
+  tags_path : nil
+  atom_path : nil
+  rss_path : nil
+
+comments :
+provider : false
+
+analytics :
+provider : false
+
+sharing :
+provider : false
