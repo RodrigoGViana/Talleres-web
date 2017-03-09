@@ -8,7 +8,9 @@ A partir de la siguiente actividad, iremos presentando diferentes herramientas p
 **Actividad 1**
 
 ***
+
 Determine si el flujo es laminar o turbulento cuando fluye glicerina a 25 °C en una tubería cuyo diámetro interior es de 150 mm. La velocidad promedio es de 3.6 m/s.
+
 ***
 
 Lo que debemos hacer en este caso es:
@@ -22,9 +24,10 @@ La ecuación para calcular el número de Reynolds es:
 
 $$
 \begin{aligned}
-Re = \mu
+Re = \dfrac{vD \rho}{\mu}
 \end{aligned}
 $$
+
 Python cuenta con funciones predefinidas que con frecuencia son de gran utilidad pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás comunes son: +, -, * y /.
 
 ```python
