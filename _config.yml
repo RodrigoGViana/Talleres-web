@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+title: Comisión de talleres 2017
+
+gems:
+    -jekyll-sitemap
