@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Definiciones y operaciones básicas
 description: How to make an independent website with GitHub Pages.
 ---
@@ -20,13 +21,6 @@ Lo que debemos hacer en este caso es:
 4. Dependiendo del valor, el programa debe generar un mensaje acorde al tipo de flujo de que se trate. 
 
 ### Funciones	
-La ecuación para calcular el número de Reynolds es:
-
-$$
-\begin{aligned}
-Re = \dfrac{vD \rho}{\mu}
-\end{aligned}
-$$
 
 Python cuenta con funciones predefinidas que con frecuencia son de gran utilidad pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás comunes son: +, -, * y /.
 
@@ -38,4 +32,62 @@ def reynolds(v, D, rho, mu):
 
 La función que acabamos de definir lleva el nombre de **reynolds** y sus argumentos se escriben entre paréntesis. Para definir correctamente dicha función usamos el comando **def**. Es muy importante no olvidar los dos puntos al final de la sentencia.
 	
-Más adelante querremos hacer uso del valor que arroje nuestra función y por lo tanto es necesario que usemos el comando **return**. De acuerdo a lo definido hasta aquí la función reynolds devolverá un valor de nombre **Re_out** definido en la segunda línea. Es importante respetar la *identación* para obtener el resultado esperado y recordar que una vez devuelto el valor de una función esta dejará de ser ejecutada inmediatamente. Cualquier código luego de la sentencia return nunca ocurrirá.    
+Más adelante querremos hacer uso del valor que arroje nuestra función y por lo tanto es necesario que usemos el comando **return**. De acuerdo a lo definido hasta aquí la función reynolds devolverá un valor de nombre **Re_out** definido en la segunda línea. Es importante respetar la *identación* para obtener el resultado esperado y recordar que una vez devuelto el valor de una función esta dejará de ser ejecutada inmediatamente. Cualquier código luego de la sentencia return nunca ocurrirá. 
+
+### Variables
+
+Para evaluar la función `reynolds` en un punto, es decir, para que nos arroje un valor, es necesario primero asignar valores a sus variables. A continuación presentamos dos alternativas:
+
+```python
+v = 3.6 # m/s
+D = 0.015 # m
+rho = 1258 # kg/m3
+mu = 0.96 # Pa s
+```
+```python
+v = float(input('Ingrese un valor de velocidad en m/s: '))
+D = float(input('Ingrese el valor del diámetro interno en m: '))
+rho = float(input('Ingrese la densidad a la temperatura de trabajo en kg/m3: '))
+mu = float(input('Ingrese la viscosidad a la temperatura de trabajo en Pa s: '))
+```
+
+La primera opción parece mucho más sencilla a simple vista, pero no resulta eficiente cuando los valores se ven modificados frecuentemente. La segunda opción, por otra parte, pide al usuario que ingrese los valores a ocupar cada vez que ejecuta el programa sin necesidad de modificar el código.
+
+En Python 3.x, la función `ìnput` transforma los datos ingresados en *strings*. Aquí esto no es bueno, pero se soluciona fácilmente por medio de la función `float`, que transforma los datos en números reales.  
+
+Una vez asginadas las variables, podemos evaluar el número de Reynolds como sigue.
+
+```python
+Re = reynolds(v, D, rho, mu) # Siempre hay que respetar el orden en que se ingresa las variables.
+print('El número de Reynolds es: ', '%.e3'Re)
+```
+
+Lo que acabamos de hacer es asignar a una variables **Re** el valor del número de Reynolds, evaluado en las condiciones previamente definidas.
+
+La segunda línea usa la función `print` para mostrar el valor calculado, acompañado de un mensaje. En este caso también se ha modificado el formato del número para que se imprima con notación decimal con dos valores después de la coma. No está mal recordar que el código debe tener la suficiente cantidad de comentarios útiles para quienes trabajan con él y que, a su vez, los mensajes y valores arrojados deben ser fácilmente entendibles por el usuario.
+
+Otra forma de mejorar la presentación de los valores calculados es usar la función `round`.
+```python
+round(Re) # arroja un número entero
+round(Re, 2) # arroja un número con dos cifras decimales.
+```
+### Condiciones
+
+Una vez calculado el número de Reynolds es necesario tomar una decisión, o mejor dicho, es necesario que el programa tome una decisión y nos avise con qué tipo de flujo estamos trabajando. Vale recordar que:
+
+_ Si el número de Reynolds es menor a 2000, el flujo es laminar.
+_ Si el número de Reynolds es mayor a 4000, el flujo es turbulento.
+_ Para valores comprendidos entre 2000 y 4000 no es posible predecir el comportamiento.
+
+Ahora queda recordar que en Python contamos con `if, elif, else` para llevar a cabo este trabajo.
+
+```python
+if Re < 2000:
+	print('El flujo es laminar')
+elif Re > 4000:
+	print('El flujo es turbulento')
+else:
+	print('No se puede predecir el comportamiento')
+```
+
+Con esto hemos podido armar un programa sencillo, pero que puede ser el primer paso para llevar adelante cálculos más complejos. 
