@@ -7,9 +7,10 @@ A partir de la siguiente actividad, iremos presentando diferentes herramientas p
 
 **Actividad 1**
 
-```
+***
 Determine si el flujo es laminar o turbulento cuando fluye glicerina a 25 °C en una tubería cuyo diámetro interior es de 150 mm. La velocidad promedio es de 3.6 m/s.
-```
+***
+
 Lo que debemos hacer en este caso es:
 1. Definir una función, en este caso el número de Reynolds. 
 2. Definir las variables a utilizar.
