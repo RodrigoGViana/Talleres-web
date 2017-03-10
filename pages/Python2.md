@@ -4,7 +4,7 @@ title: Definiciones y operaciones básicas
 description: How to make an independent website with GitHub Pages.
 ---
 
-A partir de la siguiente actividad, iremos presentando diferentes herramientas para llevar a cabo de las distintas tareas.
+A partir de la siguiente actividad iremos presentando diferentes herramientas para llevar a cabo de las distintas tareas.
 
 **Actividad 1**
 
@@ -15,14 +15,14 @@ Determine si el flujo es laminar o turbulento cuando fluye glicerina a 25 °C en
 ***
 
 Lo que debemos hacer en este caso es:
-1. Definir una función, en este caso el número de Reynolds. 
+1. Definir una función que nos permita calcular el número de Reynolds. 
 2. Definir las variables a utilizar.
 3. Introducir los valores correspondientes y calcular.
 4. Dependiendo del valor, el programa debe generar un mensaje acorde al tipo de flujo de que se trate. 
 
 ### Funciones	
 
-Python cuenta con funciones predefinidas que con frecuencia son de gran utilidad pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás comunes son: `+, -, * y /`.
+Python cuenta con funciones predefinidas (o [built-in functions](https://docs.python.org/3/library/functions.html)), que con frecuencia son de gran utilidad, pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás más comunes son: `+, -, *, **` y `/`.
 
 ```python
 def reynolds(v, D, rho, mu):
@@ -30,13 +30,13 @@ def reynolds(v, D, rho, mu):
     return Re_out
 ```
 
-La función que acabamos de definir lleva el nombre de **reynolds** y sus argumentos se escriben entre paréntesis. Para definir correctamente dicha función usamos el comando **def**. Es muy importante no olvidar los dos puntos al final de la sentencia.
+La función que acabamos de definir lleva el nombre de reynolds y sus argumentos se escriben entre paréntesis. Para definir correctamente dicha función usamos el comando `def`. **Es muy importante no olvidar los dos puntos al final de la sentencia**.
 	
-Más adelante querremos hacer uso del valor que arroje nuestra función y por lo tanto es necesario que usemos el comando **return**. De acuerdo a lo definido hasta aquí la función reynolds devolverá un valor de nombre **Re_out** definido en la segunda línea. Es importante respetar la *identación* para obtener el resultado esperado y recordar que una vez devuelto el valor de una función esta dejará de ser ejecutada inmediatamente. Cualquier código luego de la sentencia return nunca ocurrirá. 
+Más adelante querremos hacer uso del valor que arroje nuestra función y por lo tanto es necesario que usemos el comando `return`. De acuerdo a lo definido hasta aquí la función reynolds devolverá un valor de nombre Re_out, definido en la segunda línea. Es importante respetar la [identación](https://es.wikipedia.org/wiki/Indentaci%C3%B3n) para obtener el resultado esperado y recordar que una vez devuelto el valor de una función esta dejará de ser ejecutada inmediatamente. **Cualquier código luego de la sentencia return nunca ocurrirá**. 
 
 ### Variables
 
-Para evaluar la función `reynolds` en un punto, es decir, para que nos arroje un valor, es necesario primero asignar valores a sus variables. A continuación presentamos dos alternativas:
+Para evaluar la función `reynolds` en un punto; es decir, para que nos arroje un valor, es necesario primero asignar valores a sus variables. A continuación presentamos dos alternativas:
 
 ```python
 v = 3.6 # m/s
@@ -53,7 +53,7 @@ mu = float(input('Ingrese la viscosidad a la temperatura de trabajo en Pa s: '))
 
 La primera opción parece mucho más sencilla a simple vista, pero no resulta eficiente cuando los valores se ven modificados frecuentemente. La segunda opción, por otra parte, pide al usuario que ingrese los valores a ocupar cada vez que ejecuta el programa sin necesidad de modificar el código.
 
-En Python 3.x, la función `input` transforma los datos ingresados en *strings*. Aquí esto no es bueno, pero se soluciona fácilmente por medio de la función `float`, que transforma los datos en números reales.  
+En Python 3.x, la función `input` transforma los datos ingresados en `strings`. Aquí esto no es bueno, pero se soluciona fácilmente por medio de la función `float`, que transforma los datos en números reales.  
 
 Una vez asginadas las variables, podemos evaluar el número de Reynolds como sigue.
 
@@ -62,7 +62,7 @@ Re = reynolds(v, D, rho, mu) # Siempre hay que respetar el orden en que se ingre
 print('El número de Reynolds es: ', '%.e3'Re)
 ```
 
-Lo que acabamos de hacer es asignar a una variables **Re** el valor del número de Reynolds, evaluado en las condiciones previamente definidas.
+Lo que acabamos de hacer es asignar a una variables Re el valor del número de Reynolds, evaluado en las condiciones previamente definidas.
 
 La segunda línea usa la función `print` para mostrar el valor calculado, acompañado de un mensaje. En este caso también se ha modificado el formato del número para que se imprima con notación decimal con dos valores después de la coma. No está mal recordar que el código debe tener la suficiente cantidad de comentarios útiles para quienes trabajan con él y que, a su vez, los mensajes y valores arrojados deben ser fácilmente entendibles por el usuario.
 
