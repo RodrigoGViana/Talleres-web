@@ -4,7 +4,7 @@ title: Paquetes
 description: Matplotlib y NumPy
 ---
 Probando ver si aparece el código
-Mathjax: True
+mathjax: True
 
 $$
 \begin{align*}
