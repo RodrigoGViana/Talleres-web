@@ -1,6 +1,5 @@
 ---
 layout: page
-mathjax: True
 title: Paquetes
 description: Matplotlib y NumPy
 ---
