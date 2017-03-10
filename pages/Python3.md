@@ -4,10 +4,7 @@ title: Paquetes
 description: Matplotlib y NumPy
 ---
 Probando ver si aparece el código
-
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+Mathjax: True
 
 $$
 \begin{align*}
