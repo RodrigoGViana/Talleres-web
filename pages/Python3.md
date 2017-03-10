@@ -1,10 +1,10 @@
 ---
 layout: page
+mathjax: True
 title: Paquetes
 description: Matplotlib y NumPy
 ---
 Probando ver si aparece el código
-mathjax: True
 
 $$
 \begin{align*}
