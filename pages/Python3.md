@@ -2,6 +2,7 @@
 layout: page
 title: Paquetes
 description: Matplotlib y NumPy
+mathjax: true
 ---
 Probando ver si aparece el código
 
