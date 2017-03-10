@@ -22,7 +22,7 @@ Lo que debemos hacer en este caso es:
 
 ### Funciones	
 
-Python cuenta con funciones predefinidas que con frecuencia son de gran utilidad pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás comunes son: +, -, * y /.
+Python cuenta con funciones predefinidas que con frecuencia son de gran utilidad pero a continuación veremos como definir correctamente nuestra propia función. Los operadores matemáticosmás comunes son: `+, -, * y /`.
 
 ```python
 def reynolds(v, D, rho, mu):
@@ -53,7 +53,7 @@ mu = float(input('Ingrese la viscosidad a la temperatura de trabajo en Pa s: '))
 
 La primera opción parece mucho más sencilla a simple vista, pero no resulta eficiente cuando los valores se ven modificados frecuentemente. La segunda opción, por otra parte, pide al usuario que ingrese los valores a ocupar cada vez que ejecuta el programa sin necesidad de modificar el código.
 
-En Python 3.x, la función `ìnput` transforma los datos ingresados en *strings*. Aquí esto no es bueno, pero se soluciona fácilmente por medio de la función `float`, que transforma los datos en números reales.  
+En Python 3.x, la función `input` transforma los datos ingresados en *strings*. Aquí esto no es bueno, pero se soluciona fácilmente por medio de la función `float`, que transforma los datos en números reales.  
 
 Una vez asginadas las variables, podemos evaluar el número de Reynolds como sigue.
 
