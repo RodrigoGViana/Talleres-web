@@ -4,21 +4,6 @@ title: Paquetes
 description: Matplotlib y NumPy
 mathjax: true
 ---
-Probando ver si aparece el código
+<iframe src="https://docs.google.com/spreadsheets/d/1A_XrkENvj4quWMQAdoWS98Ty5l4VEb9N84gMrmAoGzc/pubchart?oid=1700708126&amp;format=interactive" width=”650″ height=”400″></iframe>
 
-$$
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*}
-$$
+<iframe src=”https://docs.google.com/spreadsheets/d/1cSxj4uTej4BfUwkZid0CO_NmpcRuu5VnG08L8CZ90-w/pubchart?oid=901695064&format=interactive” width=”530″ height=”400“></iframe>
